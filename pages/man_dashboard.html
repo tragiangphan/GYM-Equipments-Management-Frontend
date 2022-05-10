@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="../assets/images/Logo-01.png" />
+      <title> Quản lý | Master Fitness </title>
+
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- styles -->
+      <link rel="stylesheet" href="../sources/styles/components/general.css" />
+      <link rel="stylesheet" href="../sources/styles/components/navbar.css" />
+      <link rel="stylesheet" href="../sources/styles/man.css" />
+
+      <!-- script -->
+      <script src="../sources/scripts/components/jquery-3.6.0.min.js"></script>
+      <script src="../sources/scripts/components/general.js"></script>
+      <script src="../sources/scripts/components/navbar.js"></script>
+      <script src="../sources/scripts/man.js"></script>
+</head>
+
+<body>
+      <div class="content">
+            <div class="remote-control">
+                  <div id="logo">
+                        <img src="/assets/images/Logo.png" style="max-width: 50%; max-height: 50%"> <br> Master Fitness
+                  </div>
+                  <div class="func-ctrl">
+                        <ul>
+                              <li class="func-ctrl_items active">
+                                    <a href="./man_dashboard.html
+                                                                  " class="func-ctrl_link">Thống kê</a>
+                              </li>
+                              <li class="func-ctrl_items">
+                                    <a href="./man_acc.html" class="func-ctrl_link">Quản lý nhân viên</a>
+                              </li>
+                              <li class="func-ctrl_items">
+                                    <a href="./man_sys.html" class="func-ctrl_link">Quản lý hệ thống</a>
+                              </li>
+                        </ul>
+                        <div class="func-ctrl_acc">
+                              <img src="../assets/images/Acc-img.jpg">
+                              <p class="acc-info">AD_name</p>
+                              <div class="popup">
+                                    <span class="poptext" id="popupID">
+                                          <ul>
+                                                <li class="pop-list">
+                                                      <a href="#" class="pop-func">Đổi mật khẩu</a>
+                                                </li>
+                                                <li class="pop-list">
+                                                      <a href="#" class="pop-func">Đăng xuất</a>
+                                                </li>
+                                          </ul>
+                                    </span>
+                                    <i class="fa-solid fa-caret-down" id="btn-expand"></i>
+                              </div>
+
+                        </div>
+
+                  </div>
+            </div>
+            <div class="workspace">
+                  <nav class="navbar">
+                        <div class="ws_title"> Thống kê </div>
+                        <div class="ws-func-btn">
+                              <button class="btn"><a href="#device">Thiết bị</a></button>
+                              <button class="btn"><a href="#rooms">Phòng tập</a></button>
+                              <button class="btn"><a href="#add">Đơn nhập</a></button>
+                              <button class="btn"><a href="#sell">Đơn thanh lý</a></button>
+                        </div>
+                  </nav>
+                  <div class="spacer" id="device"></div>
+                  <div class="ws-path">
+                        Danh sách thiết bị <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <table>
+                        <tr>
+                              <th>STT</th>
+                              <th>Mã thiết bị</th>
+                              <th>Tên thiết bị</th>
+                              <th>Số lượng</th>
+                              <th>Đơn giá</th>
+                              <th>Đơn vị</th>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>100</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>100</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>100</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>100</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                  </table>
+                  <div class="spacer" id="rooms"></div>
+                  <div class="ws-path">
+                        Danh sách phòng tập <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <table>
+                        <tr>
+                              <th>STT</th>
+                              <th>Mã phòng tập</th>
+                              <th>Tên phòng tập</th>
+                              <th>Mã NV giám sát</th>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>RM01</td>
+                              <td>Phòng tập cơ</td>
+                              <td>NV01</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>RM01</td>
+                              <td>Phòng tập cơ</td>
+                              <td>NV01</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>RM01</td>
+                              <td>Phòng tập cơ</td>
+                              <td>NV01</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>RM01</td>
+                              <td>Phòng tập cơ</td>
+                              <td>NV01</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>RM01</td>
+                              <td>Phòng tập cơ</td>
+                              <td>NV01</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>RM01</td>
+                              <td>Phòng tập cơ</td>
+                              <td>NV01</td>
+                        </tr>
+                  </table>
+                  <div class="spacer" id="add"></div>
+                  <div class="ws-path" id="add">
+                        Danh sách phiếu nhập <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <table>
+                        <tr>
+                              <th>STT</th>
+                              <th>Mã phiếu nhập</th>
+                              <th>Mã thiết bị</th>
+                              <th>Số lượng</th>
+                              <th>Đơn giá</th>
+                              <th>Đơn vị</th>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>PN01</td>
+                              <td>TB01</td>
+                              <td>01</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>PN01</td>
+                              <td>TB01</td>
+                              <td>01</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>PN01</td>
+                              <td>TB01</td>
+                              <td>01</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>PN01</td>
+                              <td>TB01</td>
+                              <td>01</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>PN01</td>
+                              <td>TB01</td>
+                              <td>01</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                  </table>
+                  <div class="spacer" id="sell"></div>
+                  <div class="ws-path" id="sell">
+                        Danh sách phiếu thanh lý <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <table>
+                        <tr>
+                              <th>STT</th>
+                              <th>Mã phiếu thanh lý</th>
+                              <th>Mã thiết bị</th>
+                              <th>Số lượng</th>
+                              <th>Đơn giá</th>
+                              <th>Đơn vị</th>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TL01</td>
+                              <td>TB01</td>
+                              <td>01</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TL01</td>
+                              <td>TB01</td>
+                              <td>01</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TL01</td>
+                              <td>TB01</td>
+                              <td>01</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TL01</td>
+                              <td>TB01</td>
+                              <td>01</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TL01</td>
+                              <td>TB01</td>
+                              <td>01</td>
+                              <td>2.500.000</td>
+                              <td>Cái</td>
+                        </tr>
+                  </table>
+            </div>
+      </div>
+</body>
+
+</html>

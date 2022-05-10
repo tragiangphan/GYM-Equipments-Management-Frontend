@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="../assets/images/Logo-01.png" />
+      <title> Nhân viên | Master Fitness </title>
+
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- styles -->
+      <link rel="stylesheet" href="../sources/styles/components/general.css" />
+      <link rel="stylesheet" href="../sources/styles/components/navbar.css" />
+      <link rel="stylesheet" href="../sources/styles/em.css" />
+
+      <!-- script -->
+      <script src="../sources/scripts/components/jquery-3.6.0.min.js"></script>
+      <script src="../sources/scripts/components/general.js"></script>
+      <script src="../sources/scripts/components/navbar.js"></script>
+      <script src="../sources/scripts/em.js"></script>
+</head>
+
+<body>
+      <div class="content">
+            <div class="remote-control">
+                  <div id="logo">
+                        <img src="/assets/images/Logo.png" style="max-width: 50%; max-height: 50%"> <br> Master Fitness
+                  </div>
+                  <div class="func-ctrl">
+                        <ul>
+                              <li class="func-ctrl_items">
+                                    <a href="./em-room.html" class="func-ctrl_link">Quản lý phòng tập</a>
+                              </li>
+                              <li class="func-ctrl_items active">
+                                    <a href="./em-device.html" class="func-ctrl_link">Mượn thiết bị</a>
+                              </li>
+                        </ul>
+                        <div class="func-ctrl_acc">
+                              <img src="../assets/images/Acc-img.jpg">
+                              <p class="acc-info">AD_name</p>
+                              <div class="popup">
+                                    <span class="poptext" id="popupID">
+                                          <ul>
+                                                <li class="pop-list">
+                                                      <a href="#" class="pop-func">Đổi mật khẩu</a>
+                                                </li>
+                                                <li class="pop-list">
+                                                      <a href="#" class="pop-func">Đăng xuất</a>
+                                                </li>
+                                          </ul>
+                                    </span>
+                                    <i class="fa-solid fa-caret-down" id="btn-expand"></i>
+                              </div>
+
+                        </div>
+
+                  </div>
+            </div>
+            <div class="workspace">
+                  <div class="ws_title"> MƯỢN THIẾT BỊ </div>
+                  <div class="ws-path">
+                        Danh sách thiết bị được mượn &nbsp;<i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <div class="ws-func">
+                        <button class="btn-add" onclick="document.getElementById('id01').style.display='block'"
+                              style="width: auto; float: right;">
+                              <i class="fa-solid fa-plus"></i>
+                              Mượn thiết bị
+                        </button>
+                  </div>
+                  <div class="popUp">
+                        <div id="id01" class="modal">
+                              <form class="modal-content animate" action="" method="post">
+                                    <h3>PHIẾU MƯỢN THIẾT BỊ</h3>
+                                    <div class="container">
+                                          <table class="tb-form">
+                                                <tr class="tb-form-row">
+                                                      <td class="tb-form-data">
+                                                            <label for="id"><b>ID phiếu mượn</b></label>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <input type="text" placeholder="Nhập ID phiếu" name="id"
+                                                                  required>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <label for="time"><b>Thời gian mượn</b></label>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <input type="datetime-local" name="time" required>
+                                                      </td>
+                                                </tr>
+                                                <tr class="tb-form-row">
+                                                      <td class="tb-form-data">
+                                                            <label for="id"><b>Mã nhân viên</b></label>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <input type="text" placeholder="Nhập tên" name="uname"
+                                                                  required>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <label for="name"><b>Tên nhân viên</b></label>
+
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <input type="text" placeholder="Nhập tên" name="uname"
+                                                                  required>
+                                                      </td>
+                                                </tr>
+                                          </table>
+                                          <table>
+                                                <tr>
+                                                      <!-- <th>STT</th> -->
+                                                      <th>Mã thiết bị</th>
+                                                      <th>Tên thiết bị</th>
+                                                      <th>Mô tả</th>
+                                                      <th>Mã phòng mượn</th>
+                                                      <th>Số lượng</th>
+                                                      <th>Trạng thái</th>
+                                                </tr>
+                                                <tr>
+                                                      <!-- <td><input type="text" required></td> -->
+                                                      <td><input type="text" required></td>
+                                                      <td><input type="text" required></td>
+                                                      <td><input type="text" required></td>
+                                                      <td><input type="text" required></td>
+                                                      <td><input type="text" required></td>
+                                                      <td><input type="text" required></td>
+                                                </tr>
+                                          </table>
+                                          <div class="btn-col">
+                                                <button type="button"
+                                                      onclick="document.getElementById('id01').style.display='none'"
+                                                      class="cancelbtn btn">Hủy</button>
+                                                <button class="btn" type="submit">Lưu</button>
+                                          </div>
+                                    </div>
+                              </form>
+                        </div>
+                  </div>
+                  <table>
+                        <tr>
+                              <th>STT</th>
+                              <th>Mã thiết bị</th>
+                              <th>Tên thiết bị</th>
+                              <th>Số lượng tồn kho</th>
+                              <th>Đơn vị</th>
+                              <th>Tình trạng</th>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>100</td>
+                              <td>Cái</td>
+                              <td>Mới</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>100</td>
+                              <td>Cái</td>
+                              <td>Mới</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>100</td>
+                              <td>Cái</td>
+                              <td>Mới</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>100</td>
+                              <td>Cái</td>
+                              <td>Mới</td>
+                        </tr>
+                  </table>
+            </div>
+      </div>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="../assets/images/Logo-01.png" />
+      <title> Thủ kho | Master Fitness </title>
+
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- styles -->
+      <link rel="stylesheet" href="../sources/styles/components/general.css" />
+      <link rel="stylesheet" href="../sources/styles/components/navbar.css" />
+      <link rel="stylesheet" href="../sources/styles/strkp.css" />
+
+      <!-- script -->
+      <script src="../sources/scripts/components/jquery-3.6.0.min.js"></script>
+      <script src="../sources/scripts/components/general.js"></script>
+      <script src="../sources/scripts/components/navbar.js"></script>
+      <script src="../sources/scripts/strkp.js"></script>
+</head>
+
+<body>
+      <div class="content">
+            <div class="remote-control">
+                  <div id="logo">
+                        <img src="/assets/images/Logo.png" style="max-width: 50%; max-height: 50%"> <br> Master Fitness
+                  </div>
+                  <div class="func-ctrl">
+                        <ul>
+                              <li class="func-ctrl_items">
+                                    <a href="./strkp-warehouse.html" class="func-ctrl_link">Quản lý kho hàng</a>
+                              </li>
+                              <li class="func-ctrl_items active">
+                                    <a href="./strkp-borrow.html" class="func-ctrl_link">Quản lý phiếu mượn</a>
+                              </li>
+                              <li class="func-ctrl_items">
+                                    <a href="./strkp-selloff.html" class="func-ctrl_link">Thanh lý thiết bị</a>
+                              </li>
+                        </ul>
+                        <div class="func-ctrl_acc">
+                              <img src="../assets/images/Acc-img.jpg">
+                              <p class="acc-info">AD_name</p>
+                              <div class="popup">
+                                    <span class="poptext" id="popupID">
+                                          <ul>
+                                                <li class="pop-list">
+                                                      <a href="#" class="pop-func">Đổi mật khẩu</a>
+                                                </li>
+                                                <li class="pop-list">
+                                                      <a href="#" class="pop-func">Đăng xuất</a>
+                                                </li>
+                                          </ul>
+                                    </span>
+                                    <i class="fa-solid fa-caret-down" id="btn-expand"></i>
+                              </div>
+
+                        </div>
+
+                  </div>
+            </div>
+            <div class="workspace">
+                  <div class="ws_title"> QUẢN LÝ PHIẾU MƯỢN </div>
+                  <div class="ws-path">
+                        Danh sách phiếu mượn
+                         <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <div class="ws-func">
+                        <div class="ws-searchbar">
+                              <input type="search" name="search" id="search" placeholder="Nhập mã phiếu mượn">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <button class="btn-add">
+                              <i class="fa-solid fa-floppy-disk"></i>
+                              Lưu thay đổi
+                        </button>
+                  </div>
+                  <table>
+                        <tr>
+                              <th>STT</th>
+                              <th>Mã phiếu mượn</th>
+                              <th>Mã NV</th>
+                              <th>Tên NV</th>
+                              <th>Mã phòng tập</th>
+                              <th>Mã thiết bị</th>
+                              <th>Tên thiết bị</th>
+                              <th>Số lượng mượn</th>
+                              <th>Ngày mượn</th>
+                              <th>Tình trạng</th>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>PM01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>RM01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>01</td>
+                              <td>28/04/2022</td>
+                              <td><input type="checkbox" name="status" class="status"> &nbsp; Duyệt</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>PM01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>RM01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>01</td>
+                              <td>28/04/2022</td>
+                              <td><input type="checkbox" name="status" class="status"> &nbsp; Duyệt</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>PM01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>RM01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>01</td>
+                              <td>28/04/2022</td>
+                              <td><input type="checkbox" name="status" class="status"> &nbsp; Duyệt</td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>PM01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>RM01</td>
+                              <td>TB01</td>
+                              <td>Tạ tay</td>
+                              <td>01</td>
+                              <td>28/04/2022</td>
+                              <td><input type="checkbox" name="status" class="status"> &nbsp; Duyệt</td>
+                        </tr>
+                  </table>
+            </div>
+      </div>
+</body>
+
+</html>

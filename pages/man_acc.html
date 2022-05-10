@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="../assets/images/Logo-01.png" />
+      <title> Quản lý | Master Fitness </title>
+
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- styles -->
+      <link rel="stylesheet" href="../sources/styles/components/general.css" />
+      <link rel="stylesheet" href="../sources/styles/components/navbar.css" />
+      <link rel="stylesheet" href="../sources/styles/man.css" />
+
+      <!-- script -->
+      <script src="../sources/scripts/components/jquery-3.6.0.min.js"></script>
+      <script src="../sources/scripts/components/general.js"></script>
+      <script src="../sources/scripts/components/navbar.js"></script>
+      <script src="../sources/scripts/man.js"></script>
+</head>
+
+<body>
+      <div class="content">
+            <div class="remote-control">
+                  <div id="logo">
+                        <img src="/assets/images/Logo.png" style="max-width: 50%; max-height: 50%"> <br> Master Fitness
+                  </div>
+                  <div class="func-ctrl">
+                        <ul>
+                              <li class="func-ctrl_items">
+                                    <a href="./man_dashboard.html" class="func-ctrl_link">Thống kê</a>
+                              </li>
+                              <li class="func-ctrl_items active">
+                                    <a href="./man_acc.html" class="func-ctrl_link">Quản lý nhân viên</a>
+                              </li>
+                              <li class="func-ctrl_items">
+                                    <a href="./man_sys.html" class="func-ctrl_link">Quản lý hệ thống</a>
+                              </li>
+                        </ul>
+                        <div class="func-ctrl_acc">
+                              <img src="../assets/images/Acc-img.jpg">
+                              <p class="acc-info">AD_name</p>
+                              <div class="popup">
+                                    <span class="poptext" id="popupID">
+                                          <ul>
+                                                <li class="pop-list">
+                                                      <a href="#" class="pop-func">Đổi mật khẩu</a>
+                                                </li>
+                                                <li class="pop-list">
+                                                      <a href="#" class="pop-func">Đăng xuất</a>
+                                                </li>
+                                          </ul>
+                                    </span>
+                                    <i class="fa-solid fa-caret-down" id="btn-expand"></i>
+                              </div>
+
+                        </div>
+
+                  </div>
+            </div>
+            <div class="workspace">
+                  <div class="ws_title navbar"> QUẢN LÝ NHÂN VIÊN </div>
+                  <div class="spacer1"></div>
+                  <div class="ws-path">
+                        Quản lý nhân viên <i class="fa-solid fa-angle-right"></i>
+                  </div>
+                  <div class="ws-func">
+                        <div class="ws-searchbar">
+                              <input type="search" name="search" id="search" placeholder="Nhập mã NV">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <button class="btn-add" onclick="document.getElementById('id01').style.display='block'"
+                              style="width: auto;">
+                              <i class="fa-solid fa-plus"></i>
+                              Thêm nhân viên
+                        </button>
+                  </div>
+                  <div class="popUp">
+                        <div id="id01" class="modal">
+                              <form class="modal-content animate" action="" method="post">
+                                    <h3>TẠO TÀI KHOẢN</h3>
+                                    <div class="container">
+                                          <table class="tb-form">
+                                                <tr class="tb-form-row">
+                                                      <td class="tb-form-data">
+                                                            <label for="id"><b>Mã nhân viên</b></label>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <input type="text" placeholder="Nhập họ" name="id" required>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <label class="label-form" for="pos"><b>Chức vụ</b></label>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <select class="select login-input" id="pos" name="pos">
+                                                                  <option value="manager">Quản lý</option>
+                                                                  <option value="employee">Nhân viên</option>
+                                                                  <option value="storekeeper">Thủ kho</option>
+                                                            </select>
+                                                      </td>
+                                                </tr>
+                                                <tr class="tb-form-row">
+                                                      <td class="tb-form-data">
+                                                            <label for="id"><b>Họ</b></label>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <input type="text" placeholder="Nhập họ" name="id"
+                                                                  required>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <label for="time"><b>Tên</b></label>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <input type="text" placeholder="Nhập tên" name="time" required>
+                                                      </td>
+                                                </tr>
+                                                <tr class="tb-form-row">
+                                                      <td class="tb-form-data">
+                                                            <label for="id"><b>Email</b></label>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <input type="email" placeholder="Nhập email" name="uname"
+                                                                  required>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <label for="name"><b>Số điện thoại</b></label>
+
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <input type="text" placeholder="Nhập số điện thoại" name="uname"
+                                                                  required>
+                                                      </td>
+                                                </tr>
+                                                <tr class="tb-form-row">
+                                                      <td class="tb-form-data">
+                                                            <label for="id"><b>Giới tính</b></label>
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <input type="radio" name="uname" value="Nam" required>Nam &nbsp;&nbsp;&nbsp;
+                                                            <input type="radio" name="uname" value="Nu" required>Nữ
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <label for="name"><b>Mật khẩu</b></label>
+                                                
+                                                      </td>
+                                                      <td class="tb-form-data">
+                                                            <input type="password" placeholder="Nhập mật khẩu" name="uname" required>
+                                                      </td>
+                                                </tr>
+                                          </table>
+                                          <div class="btn-col">
+                                                <button type="button"
+                                                      onclick="document.getElementById('id01').style.display='none'"
+                                                      class="cancelbtn btn">Hủy</button>
+                                                <button class="btn" type="submit">Thêm</button>
+                                          </div>
+                                    </div>
+                              </form>
+                        </div>
+                  </div>
+                  <table>
+                        <tr>
+                              <th>STT</th>
+                              <th>Mã NV</th>
+                              <th>Tên NV</th>
+                              <th>Giới tính</th>
+                              <th>Năm sinh</th>
+                              <th>Chức vụ</th>
+                              <th>Lương</th>
+                              <th>Tình trạng</th>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>Nam</td>
+                              <td>1987</td>
+                              <td>Quản lý</td>
+                              <td>$2000</td>
+                              <td><input type="checkbox" name="status" class="status"></td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>Nam</td>
+                              <td>1987</td>
+                              <td>Quản lý</td>
+                              <td>$2000</td>
+                              <td><input type="checkbox" name="status" class="status"></td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>Nam</td>
+                              <td>1987</td>
+                              <td>Quản lý</td>
+                              <td>$2000</td>
+                              <td><input type="checkbox" name="status" class="status"></td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>Nam</td>
+                              <td>1987</td>
+                              <td>Quản lý</td>
+                              <td>$2000</td>
+                              <td><input type="checkbox" name="status" class="status"></td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>Nam</td>
+                              <td>1987</td>
+                              <td>Quản lý</td>
+                              <td>$2000</td>
+                              <td><input type="checkbox" name="status" class="status"></td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>Nam</td>
+                              <td>1987</td>
+                              <td>Quản lý</td>
+                              <td>$2000</td>
+                              <td><input type="checkbox" name="status" class="status"></td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>Nam</td>
+                              <td>1987</td>
+                              <td>Quản lý</td>
+                              <td>$2000</td>
+                              <td><input type="checkbox" name="status" class="status"></td>
+                        </tr>
+                        <tr>
+                              <td>01</td>
+                              <td>NV01</td>
+                              <td>NVA</td>
+                              <td>Nam</td>
+                              <td>1987</td>
+                              <td>Quản lý</td>
+                              <td>$2000</td>
+                              <td><input type="checkbox" name="status" class="status"></td>
+                        </tr>
+                  </table>
+            </div>
+      </div>
+</body>
+
+</html>
