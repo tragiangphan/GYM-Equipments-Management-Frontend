@@ -1,16 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="shortcut icon" type="image/png" href="favicon.png" />
-        <title>Master Fitness</title>
-    </head>
-    <body>
-        <h1>Master Fitness</h1>
-        <div class="root"></div>
-        <button id="button">fetch nhan vien</button>
-        <script src="main.js"></script>
-    </body>
+
+<head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="./assets/images/Logo-02-01.png" />
+      <title>Đăng nhập | Master Fitness</title>
+
+      <!-- fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!-- styles -->
+      <link rel="stylesheet" href="./sources/styles/components/general.css" />
+      <link rel="stylesheet" href="../sources/styles/login.css" />
+
+      <!-- script -->
+      <script src="./sources/script/components/jquery-3.6.0.min.js"></script>
+      <script src="./sources/scripts/components/header.js"></script>
+      <script src="./sources/script/homepage.js"></script>
+</head>
+
+<body>
+      <div class="login-container">
+            <div class="login">
+                  <img src="./assets/images/Img_account.jpg" id="img-acc" />
+                  <div class="login-form">
+                        <div class="login-form_logo">
+                              <img src="./assets/images/Logo-02.png" style="max-width: 30%; max-height: 30%" id="logo" />
+                              <h3>Master Fitness</h3>
+                        </div>
+                        <form action="" class="login-fields">
+                              <div class="form-group">
+                                    <label class="label-form" for="pos">Chức vụ</label>
+                                    <br />
+                                    <select class="select login-input" id="pos" name="pos">
+                                          <option value="manager">Quản lý</option>
+                                          <option value="employee">Nhân viên</option>
+                                          <option value="storekeeper">Thủ kho</option>
+                                    </select>
+                              </div>
+                              <div class="form-group">
+                                    <label class="label-form" for="pos">Tài khoản</label>
+                                    <br />
+                                    <input class="login-input" type="text" id="name" name="name"
+                                          placeholder="Nhập tài khoản" />
+                              </div>
+                              <div class="form-group">
+                                    <label class="label-form" for="pos">Mật khẩu</label>
+                                    <br />
+                                    <input class="login-input" type="password" id="pass" name="pass"
+                                          placeholder="Nhập mật khẩu" />
+                              </div>
+                              <div class="login_sub-form">
+                                    <div class="sub-form">
+                                          <input type="checkbox" checked="checked" name="check" value="remember" />
+                                          <label for="check">Remember me</label>
+                                    </div>
+                                    <a href="#" class="forget">Forget password?</a>
+                              </div>
+                              <input type="submit" value="LOG IN" class="btn btn-dark" />
+                        </form>
+                  </div>
+            </div>
+      </div>
+</body>
+
 </html>

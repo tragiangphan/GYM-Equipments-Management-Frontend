@@ -1,0 +1,88 @@
+/* =============== Reset css =============== */
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Alata", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+    border: none;
+}
+
+input {
+    line-height: normal;
+}
+
+label,
+button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+    color: var(--pl-light-1);
+}
+
+ul {
+    list-style: none;
+}
+
+.remote-control {
+    background-color: var(--pl-dark-3);
+    height: 100%;
+    width: 20%;
+    filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.65));  
+    position: fixed;
+    overflow: auto;
+}
+
+.workspace {
+    margin-left: 20%;
+    position: absolute;
+    width: 80%;
+}
+
+.navbar {
+    position: fixed;
+    width: 80%;
+}
+
+.spacer {
+    margin-bottom: 17%;
+}
+
+.spacer1 {
+    margin-bottom: 9.5%;
+}
+
+/* =============== Variable ===============*/
+:root {
+    --primary-bg: rgb(249, 249, 249);
+    /* palette light-colors */
+    --pl-light-1: #E8E8E8;
+    --pl-light-2: #DFDFDE;
+    --pl-light-3: #FCD2D1;
+    /* palette dark-colors */
+    --pl-dark-1: #e3b04b;
+    --pl-dark-2: #F05454;
+    --pl-dark-3: #30475E;
+    --pl-dark-4: #1C2630;
+}
