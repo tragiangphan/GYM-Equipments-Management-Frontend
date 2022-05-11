@@ -78,7 +78,7 @@
     width: 100%;
     height: 35px;
     border: none;
-    border-bottom: 4px solid var(--pl-dark-2);
+    border-bottom: 2px solid var(--pl-dark-2);
     background-color: transparent;
     color: var(--pl-light-1);
     font-size: 16px;
@@ -120,7 +120,7 @@
 }
 
 .forget:hover {
-    color: var(--pl-dark-2);
+    color: var(--pl-dark-1);
 }
 
 .btn {
@@ -141,6 +141,6 @@
 
 .btn.btn-dark:hover {
     transform: translateY(-2px);
-    background-color: var(--pl-dark-2);
+    background-color: var(--pl-dark-1);
     color: #fff;
 }

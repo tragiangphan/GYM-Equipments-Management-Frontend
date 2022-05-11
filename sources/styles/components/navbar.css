@@ -31,6 +31,7 @@
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
 }
+
 .func-ctrl_items:not(.active):hover::after {
     width: 100%;
 }
@@ -51,7 +52,7 @@
     padding: 4% 12%;
     color: var(--pl-dark-3);
     vertical-align: bottom;
-    background-color: var(--pl-light-2);
+    background-color: var(--pl-light-1);
     font-size: 18px;
     position: absolute;
     bottom: 0;
@@ -66,8 +67,7 @@
 }
 
 .popup > i {
-    border: 2px solid var(--pl-dark-3);
-    padding: 3px 6px;
+    padding: 4px 8px;
     border-radius: 50%;
     cursor: pointer;
     color: var(--pl-light-1);
