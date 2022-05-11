@@ -66,20 +66,10 @@
     border-radius: 50%;
 }
 
-.popup > i {
-    padding: 4px 8px;
-    border-radius: 50%;
-    cursor: pointer;
-    color: var(--pl-light-1);
-    background-color: var(--pl-dark-3);
-}
-
 .poptext > ul {
-    background-color: var(--pl-dark-4);
+    background-color: var(--pl-dark-3);
     border-radius: 15px;
     border-bottom: 1px solid;
-    padding: 0.5em 1em;
-    margin: 2vh 3vw;
     text-align: center;
 }
 
@@ -90,7 +80,7 @@
 }
 
 .pop-list > a:hover {
-    color: var(--pl-dark-2);
+    color: var(--pl-dark-1);
 }
 
 .pop-list {
@@ -98,6 +88,17 @@
     cursor: pointer;
 }
 
+#btn-expand,
 #popupID {
-  display: none;
+    padding: 5px;
+    text-align: center;
+    background-color: var(--pl-dark-3);
+    color: var(--pl-light-1);
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+
+#popupID {
+    padding: 50px;
+    display: none;
 }
